@@ -39,7 +39,7 @@ const MainPage = () => {
   {/* left side */}
   <div className="  relative flex justify-center items-center  bg-gradient-to-b from-[#FFDADE] to-[#F1A1AA] w-1/2">
   
- <div className="w-full h-full  text-center  relative bg-[url('/images/mainImage.svg')] bg-contain bg-center mb-4 bg-no-repeat">
+ <div className="w-full h-full  text-center  relative bg-[url('/images/main2.png')] bg-contain bg-center mb-10 bg-no-repeat">
 
 {/* <div className="  absolute top-0 bottom-3 left-0 right-0">
 <img 

@@ -2,7 +2,7 @@
 
 const HomeOrder = () => {
   return (
-    <div className="absolute  bg-white rounded-xl bottom-0 left-1/2 transform -translate-x-1/2  translate-y-1/2 p-2 flex min-w-[80%] items-center ">
+    <div className="absolute shadow bg-white rounded-xl bottom-0 left-1/2 transform -translate-x-1/2  translate-y-1/2 p-2 flex min-w-[80%] items-center ">
     {/* start right */}
        <div className="right flex  flex-grow  justify-between items-center ">
         <div className="flex justify-center items-center gap-3 py-3 px-6 ">

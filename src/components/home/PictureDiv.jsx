@@ -26,16 +26,17 @@ const PictureDiv = () => {
     </div>
 
 
-    <div className=" absolute top-[50%] text-4xl -rotate-45 right-[8%] ">
-    🍔
+    <div className=" absolute top-[50%] h-14 text-4xl rotate-45 right-[5%] ">
+    <img src="./images/burger.png" alt="" className="w-full" />
 
     </div>
-    <div className=" absolute top-[20%] text-4xl rotate-45 right-[15%] ">
-    🍣
+    <div className=" absolute top-[20%] text-4xl h-14 rotate-[50] right-[15%] ">
+    <img src="./images/toast.png" alt="" className="w-full" />
+
 
     </div>
-    <div className=" absolute left-[20%]  rotate-90 top-[25%] text-5xl ">
-    🍕
+    <div className=" absolute left-[20%] h-14  rotate-45 top-[25%] text-5xl ">
+    <img src="./images/pizza1.png" alt="" className="w-full" />
 
     </div>
     <div className=" absolute left-[13%] text-[#302F3C]  h-14 top-[45%] text-5xl ">
