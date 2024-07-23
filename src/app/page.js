@@ -5,6 +5,7 @@ import HomeOrder from "@/components/home/HomeOrder";
 import MainPage from "@/components/home/MainPage";
 import PictureDiv from "@/components/home/PictureDiv";
 import MealsPage from "@/components/mealsSection/MealsSection";
+import PartnerSection from "@/components/partnerSection/PartnerSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <CounterSection/>
     <MealsPage/>
     <ContactSection/>
+    <PartnerSection/>
     
     </>
   );
