@@ -12,7 +12,7 @@ const Navbar = () => {
                 setshow((prev) =>  !prev)
         }
   return (
-    <nav className=" text-mainColor lg:px-24 px-1 py-2 flex sm:flex-row flex-col justify-between items-center leading-5  ">
+    <nav className=" text-mainColor lg:px-24 px-1 py-2 flex sm:flex-row flex-col justify-between items-center leading-5 font-Expo ">
        <div className="flex items-center justify-between gap-5 lg:gap-20">
        
             <Image src={logo} width={81} height={56} alt="MyzMary logo" />

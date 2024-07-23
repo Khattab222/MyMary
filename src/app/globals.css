@@ -20,9 +20,9 @@
     @apply rounded-3xl py-2 px-6 bg-mainColor text-white text-sm font-medium
   }
 }
-body {
+/* body {
   font-family: 'Exo 2 Variable', sans-serif;
-}
+} */
 
 .Home_page{
   height: 85vh;
