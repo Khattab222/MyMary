@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        textColor:"#21294B"
+        mainColor:"#21294B",
+        secontColor:"#797C89"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,5 +22,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-rtl'),
+  ],
 };

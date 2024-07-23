@@ -15,7 +15,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
-
+@layer components {
+  .buttonStyle {
+    @apply rounded-3xl py-2 px-6 bg-mainColor text-white text-sm font-medium
+  }
+}
 body {
   font-family: 'Exo 2 Variable', sans-serif;
 }
