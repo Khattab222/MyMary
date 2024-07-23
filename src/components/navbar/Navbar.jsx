@@ -2,22 +2,43 @@
 import logo from "@/../public/logo.png"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 
 const Navbar = () => {
-  return (
-    <nav className=" lg:px-24 px-1 py-2 flex sm:flex-row flex-col justify-between items-center leading-5 text-[#001F15] ">
-       <div className="flex items-center justify-between gap-5 lg:gap-20">
-       <div className=" md:hidden">
 
-<button >  <img src="./images/burger.svg" alt="burger" /> </button>
-</div>
-            <Image src={logo} width={81} height={56} alt="MyzMary logo" />
+        const [show, setshow] = useState(false)
+
+        const handleShow = () =>{
+                setshow((prev) =>  !prev)
+        }
+  return (
+    <nav className=" text-mainColor lg:px-24 px-1 py-2 flex sm:flex-row flex-col justify-between items-center leading-5  ">
+       <div className="flex items-center justify-between gap-5 lg:gap-20">
        
+            <Image src={logo} width={81} height={56} alt="MyzMary logo" />
+<div className=" md:hidden relative ">
+
+<button onClick={handleShow} >  <img src="./images/burger.svg" alt="burger" /> </button>
+{/*start dropdown menu */}
+{
+   show&&  <div className='absolute w-44 bg-white rounded shadow   z-40 p-3'>
+   <ul className="flex flex-col  text-sm    ">
+       <li className="font-bold hover:bg-[#fff0f2]  p-2 rounded transition duration-75"> <Link href="#home">الرئيسية</Link> </li>
+       <li className="hover:bg-[#fff0f2]  p-2 rounded transition duration-75"> <Link href="#about">من نحن</Link> </li>
+       <li className="hover:bg-[#fff0f2]  p-2 rounded transition duration-75"> <Link href="#meals">قائمة الوجبات</Link> </li>
+       <li className="hover:bg-[#fff0f2]  p-2 rounded transition duration-75"> <Link href="#contact">تواصل معنا</Link> </li>
+   </ul>
+</div>   
+}
+
+{/*end dropdown menu */}
+
+</div>
         <ul className="hidden md:flex  text-sm gap-4 lg:gap-8  ">
-            <li className="font-bold "> <Link href="">الرئيسية</Link> </li>
-            <li> <Link href="">من نحن</Link> </li>
-            <li> <Link href="">قائمة الوجبات</Link> </li>
-            <li> <Link href="">تواصل معنا</Link> </li>
+            <li className="font-bold "> <Link href="#home">الرئيسية</Link> </li>
+            <li> <Link href="#about">من نحن</Link> </li>
+            <li> <Link href="#meals">قائمة الوجبات</Link> </li>
+            <li> <Link href="#contact">تواصل معنا</Link> </li>
         </ul>
 
         

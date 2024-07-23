@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import '@fontsource-variable/exo-2';
-import Navbar from "@/components/Navbar";
+
 import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" className="scroll-smooth">
       <body className=' '>
         <div className="flex flex-col min-h-screen ">
         <header>

@@ -3,7 +3,7 @@ import Container from '../common/Container'
 
 const ContactSection = () => {
   return (
-    <section className='bg-gradient-to-r from-[#fff0f2] via-[#ffffff] to-[#eaf5ff] text-mainColor py-16'>
+    <section id='contact' className='bg-gradient-to-r from-[#fff0f2] via-[#ffffff] to-[#eaf5ff] text-mainColor py-16'>
         <Container>
           
             <div className='grid grid-cols-1 md:grid-cols-2'>

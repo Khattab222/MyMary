@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const MainPage = () => {
   return (
-    <div className="grid lg:grid-cols-2  lg:h-[85vh] relative  ">
+    <div id="home" className="grid lg:grid-cols-2  lg:h-[85vh] relative  ">
 
     {/* right side */}
   <div className="lg:h-auto h-[90vh] relative bg-gradient-to-b from-[#CAE5FF] to-[#A6D0F8]  flex flex-col justify-center gap-8 items-start px-12 leading-[40px]">

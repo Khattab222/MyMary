@@ -4,7 +4,7 @@ import MealsContainer from './MealsContainer'
 
 const MealsPage = () => {
   return (
-    <section className='py-16 text-mainColor relative '>
+    <section id='meals' className='py-16 text-mainColor relative '>
       <Container>
         <div className='space-y-8 relative z-[2]  '>
 
