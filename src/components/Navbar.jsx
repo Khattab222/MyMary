@@ -5,17 +5,22 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <nav className=" md:px-24 py-2 flex justify-between items-center leading-5 text-[#001F15] ">
-       <div className="flex items-center justify-between  gap-20">
-        
+    <nav className=" lg:px-24 px-1 py-2 flex sm:flex-row flex-col justify-between items-center leading-5 text-[#001F15] ">
+       <div className="flex items-center justify-between gap-5 lg:gap-20">
+       <div className=" md:hidden">
+
+<button >  <img src="./images/burger.svg" alt="burger" /> </button>
+</div>
             <Image src={logo} width={81} height={56} alt="MyzMary logo" />
        
-        <ul className="flex text-sm gap-8  ">
+        <ul className="hidden md:flex  text-sm gap-4 lg:gap-8  ">
             <li className="font-bold "> <Link href="">الرئيسية</Link> </li>
             <li> <Link href="">من نحن</Link> </li>
             <li> <Link href="">قائمة الوجبات</Link> </li>
             <li> <Link href="">تواصل معنا</Link> </li>
         </ul>
+
+        
        </div>
 
 

@@ -4,13 +4,13 @@ import Image from "next/image";
 
 const MainPage = () => {
   return (
-    <div className="flex justify-between Home_page relative  ">
+    <div className="grid lg:grid-cols-2  lg:h-[85vh] relative  ">
 
     {/* right side */}
-  <div className="relative bg-gradient-to-b from-[#CAE5FF] to-[#A6D0F8] w-1/2 flex flex-col justify-center gap-8 items-start px-12 leading-[40px]">
+  <div className="lg:h-auto h-[90vh] relative bg-gradient-to-b from-[#CAE5FF] to-[#A6D0F8]  flex flex-col justify-center gap-8 items-start px-12 leading-[40px]">
   <div className="relative ">
 
-    <h2 className="font-bold relative text-[#21294B] text-3xl md:text-[64px] z-[2]">استمتع</h2>
+    <h2 className="font-bold relative text-[#21294B]  text-[64px] z-[2]">استمتع</h2>
     {/* stars on head */}
     <div className=" absolute -top-[180%] -left-[50%]  mb-0 z-[1]">
   <svg width="100%" height="115" viewBox="0 0 89 115" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +21,7 @@ const MainPage = () => {
 
   </div>
   </div>
-    <span className="font-normal text-xl md:text-6xl text-[#21294B] ">بوجبات شهية تُسلم إلى عتبة داركم</span>
+    <span className="font-normal text-6xl text-[#21294B] ">بوجبات شهية تُسلم إلى عتبة داركم</span>
     <p className="font-medium text-sm leading-8 text-[#5C6C8A]">مطابخ ميز ماري تقدم لكم أفضل الأطباق الطازجة والمعدة بأعلى معايير الجودة، مباشرة إلى باب منزلكم</p>
    {/*start blocks absolute */}
     <div className=" absolute bottom-0 w-1/3 right-0  ">
@@ -37,9 +37,9 @@ const MainPage = () => {
   </div>
 
   {/* left side */}
-  <div className="  relative flex justify-center items-center  bg-gradient-to-b from-[#FFDADE] to-[#F1A1AA] w-1/2">
+  <div className="left h-[90vh] lg:h-auto  relative flex justify-center items-center  bg-gradient-to-b from-[#FFDADE] to-[#F1A1AA] ">
   
- <div className="w-full h-full  text-center  relative bg-[url('/images/main2.png')] bg-contain bg-center mb-10 bg-no-repeat">
+ <div className="w-full h-full   text-center  relative bg-[url('/images/main2.png')] bg-contain bg-center mb-10 bg-no-repeat">
 
 {/* <div className="  absolute top-0 bottom-3 left-0 right-0">
 <img 
@@ -50,12 +50,12 @@ const MainPage = () => {
 </div> */}
 
   
-<PictureDiv/>
+
  </div>
  
-
+ <PictureDiv/>
  {/* start icon absolute */}
-<div className="absolute left-0 bottom-[15%] border w-[10%]" >
+<div className="absolute left-0 bottom-[15%]  " >
 
   <img src="/images/start.svg" className="w-full" alt="star"/>
 </div>
@@ -64,12 +64,8 @@ const MainPage = () => {
   </div>
 
   {/* center absoulte element */}
-  <div className=" absolute top-0 left-1/2 transform -translate-x-1/2  ">
-  <svg width="142" height="174" viewBox="0 0 142 174" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M70.9802 174C31.7533 174 0 142.263 0 103.145H142C141.96 142.263 110.207 174 70.9802 174Z" fill="#CAE5FF"/>
-<path d="M70.9802 103.145C38.9106 103.145 12.9307 77.2107 12.9307 45.1975H129.069C129.03 77.1712 103.05 103.145 70.9802 103.145Z" fill="#FFDADE"/>
-<path d="M70.9802 45.1579C45.9889 45.1579 25.7427 24.9474 25.7427 0H116.257C116.218 24.9474 95.9716 45.1579 70.9802 45.1579Z" fill="#CAE5FF"/>
-</svg>
+  <div className=" absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 lg:w-auto lg:h-auto ">
+  <img src="./images/center.svg" alt="" />
 
   </div>
 

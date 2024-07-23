@@ -26,27 +26,35 @@ const PictureDiv = () => {
     </div>
 
 
-    <div className=" absolute top-[50%] h-14 text-4xl rotate-45 right-[5%] ">
+    <div className=" absolute top-[50%] h-14 text-4xl rotate-45 right-[1%] md:right-[5%] ">
     <img src="./images/burger.png" alt="" className="w-full" />
 
     </div>
+
     <div className=" absolute top-[20%] text-4xl h-14 rotate-[50] right-[15%] ">
     <img src="./images/toast.png" alt="" className="w-full" />
 
 
     </div>
+
+
     <div className=" absolute left-[20%] h-14  rotate-45 top-[25%] text-5xl ">
     <img src="./images/pizza1.png" alt="" className="w-full" />
 
     </div>
+
+
     <div className=" absolute left-[13%] text-[#302F3C]  h-14 top-[45%] text-5xl ">
     <img src="./images/ss.png" alt="" className="w-full" />
 
     </div>
+
     <div className=" absolute left-[13%] text-[#302F3C]  h-14 top-[10%] text-5xl ">
     <img src="./images/knif.png" alt="" className="w-full" />
 
     </div>
+
+
     <div className=" absolute bottom-4 text-4xl rotate-2 right-[10%] ">
     <svg width="130" height="154" viewBox="0 0 130 154" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M99.288 81.1729C108.43 64.7765 114.448 47.5602 116.268 29.0248C116.969 21.8734 116.854 14.7638 116.059 7.70242C115.953 6.76106 115.808 5.81639 115.818 4.86762C115.828 3.98762 115.909 3.06913 116.156 2.22203C116.755 0.161679 118.249 -0.50374 119.966 0.515223C121.695 1.54094 122.964 3.08731 123.992 4.85816C126.677 9.48469 128.312 14.5462 128.983 20.0131C130.026 28.5137 129.325 37.0108 127.772 45.5087C124.909 61.1743 119.351 75.7837 110.692 89.166C107.62 93.913 104.122 98.3065 100.188 102.287C91.048 111.535 81.752 120.606 71.86 128.945C59.8373 139.08 46.5446 146.433 31.8512 150.618C25.0576 152.553 18.1801 153.625 11.2333 153.508C9.21154 153.474 7.21468 153.008 5.21371 152.7C4.74873 152.628 4.30348 152.418 3.86642 152.23C-0.565366 150.328 -1.24732 145.647 2.38312 142.006C3.94524 140.439 5.83349 139.45 7.83871 138.878C10.6543 138.076 13.5015 137.381 16.3594 136.834C22.2041 135.717 28.1009 134.959 33.9119 133.642C46.3857 130.814 58.1429 125.831 68.9422 118.189C75.1805 113.775 80.7634 108.619 85.4686 102.376C90.5157 95.6796 95.0443 88.6318 99.288 81.1729Z" fill="white"/>
