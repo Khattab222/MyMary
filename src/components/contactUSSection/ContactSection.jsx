@@ -1,9 +1,19 @@
+'use client'
 import React from 'react'
 import Container from '../common/Container'
+import { motion } from 'framer-motion'
 
 const ContactSection = () => {
   return (
-    <section id='contact' className='bg-gradient-to-r from-[#fff0f2] via-[#ffffff] to-[#eaf5ff] text-mainColor py-16'>
+    <motion.section
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{
+      duration:1.2
+    }}
+    viewport={{ once: false }}
+    
+    id='contact' className='bg-gradient-to-r from-[#fff0f2] via-[#ffffff] to-[#eaf5ff] text-mainColor py-16'>
         <Container>
           
             <div className='grid grid-cols-1 md:grid-cols-2'>
@@ -73,7 +83,7 @@ const ContactSection = () => {
 
             </div>
         </Container>
-    </section>
+    </motion.section>
   )
 }
 

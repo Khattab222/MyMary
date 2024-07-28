@@ -1,10 +1,27 @@
+"use client"
 import HomeOrder from "@/components/home/HomeOrder";
 import PictureDiv from "@/components/home/PictureDiv";
 import Image from "next/image";
-
+import {AnimatePresence, motion} from "framer-motion"
 const MainPage = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+    
+      transition: {
+        duration:1,
+        delayChildren: 0.2,
+        staggerChildren: 0.2
+      }
+    }
+  };
   return (
-    <div id="home" className="grid lg:grid-cols-2  lg:h-[85vh] relative  ">
+    <motion.div 
+    variants={container}
+    initial="hidden"
+    animate="visible"
+    id="home" className="grid lg:grid-cols-2  lg:h-[85vh] relative  ">
 
     {/* right side */}
   <div className="lg:h-auto h-[90vh] relative bg-gradient-to-b from-[#CAE5FF] to-[#A6D0F8]  flex flex-col justify-center gap-8 items-start px-12 leading-[40px]">
@@ -72,7 +89,7 @@ const MainPage = () => {
   {/*start bottom order absolute */}
   <HomeOrder/>
   {/*end bottom order absolute */}
-  </div>
+  </motion.div>
   )
 }
 

@@ -1,10 +1,15 @@
+'use client'
 import React from 'react'
 import Container from '../common/Container'
+import {AnimatePresence, motion} from "framer-motion"
 
 const AboutPage = () => {
   return (
     <Container>
-      <div id='about' className='mt-5 py-20 grid grid-cols-1 md:grid-cols-2'>
+      <motion.div
+       initial={{ opacity: 0 }}
+       whileInView={{ opacity: 1 }}
+      id='about' className='mt-5 py-20 grid grid-cols-1 md:grid-cols-2'>
         {/* start right */}
        <div className="right  text-mainColor ">
         <div className='space-y-6 p-14 '>
@@ -48,7 +53,7 @@ const AboutPage = () => {
        </div>
         {/* end left */}
 
-      </div>
+      </motion.div>
     </Container>
   )
 }

@@ -682,7 +682,7 @@ const tabs = [
 
 
 const container = {
-  hidden: { opacity: 1 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
   
@@ -735,6 +735,7 @@ const item = {
                variants={container}
     initial="hidden"
     animate="visible"
+    whileInView="visible"
     
    
                >

@@ -1,10 +1,19 @@
+'use client'
 import React from 'react'
 import Container from '../common/Container'
+import {AnimatePresence, motion} from "framer-motion"
 
 const CounterSection = () => {
   return (
 
-    <div className=' py-6 bg-gradient-to-r from-[#fff0f2] via-[#ffffff] to-[#eaf5ff] text-mainColor'>
+    <motion.div 
+    
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{
+      duration:1.5
+    }}
+    className=' py-6 bg-gradient-to-r from-[#fff0f2] via-[#ffffff] to-[#eaf5ff] text-mainColor'>
  <Container >
        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6  '>
        
@@ -51,7 +60,7 @@ const CounterSection = () => {
        </div>
 
         </Container>
-    </div>
+    </motion.div>
    
   )
 }
