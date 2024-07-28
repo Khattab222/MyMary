@@ -28,6 +28,8 @@ const MealsContainer = () => {
 
               </div>
             </div>
+
+            
             <div className='shadow rounded-2xl '>
                 <div className='relative'>
                     <img src="./images/meal2.png" alt="meal" className='w-full' />
