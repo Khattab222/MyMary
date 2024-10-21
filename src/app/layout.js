@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 const expo = localfont({
   src:[{
-    path:"../../public/fonts/Expo-light.ttf",
+    path:"@/components/fonts/Expo-light.ttf",
     weight:"400"
   }],
   variable:"--expo-light"
